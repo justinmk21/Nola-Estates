@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
       const fetchListings = async () => {
           try {
-              const responce = await axios.get('http://127.0.0.1:8000/nolalisting/properties/');
+              const responce = await axios.get('https://real-estate-api-ti97.onrender.com/nolalisting/properties/');
               console.log('Fetched data:', responce.data);
               setListings(responce.data)
           } catch (error) {
