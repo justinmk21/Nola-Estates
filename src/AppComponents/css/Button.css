@@ -1,0 +1,18 @@
+.button {
+    color: #FFAC12;
+    font-weight: bold;
+    padding: 8px 32px;
+    margin-top: 12px;
+    border-radius: 10px;
+    max-height: 50px;
+    background-color: #271A00;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #FFAC12;
+}
+
+.button:active {
+    background-color: #4f3809;
+}

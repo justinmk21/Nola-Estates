@@ -1,0 +1,103 @@
+.similar-properties-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 300px;
+    position: relative;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+/* Container to hold the slider and buttons */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Similar listings section with hidden scrollbar */
+.similar-listings {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    max-width: 100%;
+}
+
+.similar-listings::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Add padding or gap between the cards */
+.similar-listings > div {
+    padding: 0 10px; /* Space between each card */
+    flex: 0 0 33.33%; /* 3 items per row */
+    box-sizing: border-box;
+}
+
+/* Arrow button styling */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the buttons are above the listings */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #F5F5F5; /* Add a subtle shadow */
+}
+
+/* Position the left and right buttons */
+.left-arrow {
+    left: -40px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.right-arrow {
+    right: -40px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+/* Responsive layout for smaller screens */
+@media(max-width: 1600px) {
+    .similar-properties-page {
+        padding: 30px 160px;
+    }
+}
+
+@media(max-width: 1280px) {
+    .similar-properties-page {
+        padding: 30px 70px;
+    }
+    .scroll-button {
+        width: 30px; /* Adjust button size */
+        height: 30px;
+        padding: 5px; /* Smaller padding */
+    }
+
+    .left-arrow {
+        left: -32px;
+        border: 1px solid rgb(189, 189, 189);
+    }
+
+    .right-arrow {
+        right: -32px;
+        border: 1px solid rgb(189, 189, 189);
+    }
+}
+
+@media(max-width: 710px) {
+    .similar-properties-page {
+        padding: 30px 30px;
+    }
+}

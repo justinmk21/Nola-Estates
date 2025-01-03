@@ -1,0 +1,33 @@
+.contact-form {
+    display: grid;
+    justify-items: center;
+    min-width: 336px;
+    max-width: 672px;
+    width: 100%;
+    min-height: 620px;
+    padding: 32px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.contact-form input {
+    height: 60px;
+    min-width: 296px;
+    max-width: 640px;
+    width: 100%;
+    padding: 32px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+}
+
+.contact-form textarea {
+    height: 90px;
+    min-width: 296px;
+    max-width: 640px;
+    width: 100%;
+    padding: 32px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+}

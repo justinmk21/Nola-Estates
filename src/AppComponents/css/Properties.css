@@ -1,0 +1,60 @@
+.estate-page {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding-top: 100px;
+    min-height: 1000px;
+}
+
+.estate-group {
+    max-width: 1070px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.select-listing {
+    margin-top: 60px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 100px auto;
+    justify-items: center;
+}
+
+.select-listing {
+    display: flex;
+}
+
+@media(max-width: 1104px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .estate-group {
+        padding: 0 6px;
+    }
+}
+
+@media(max-width: 710px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .estate-group {
+        padding: 0 6px;
+    }
+
+    .select-listing {
+        align-items: center;
+        flex-direction: column;
+    }
+}

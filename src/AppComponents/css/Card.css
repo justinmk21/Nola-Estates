@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+
+    height: 380px;
+
+    border-color: #Fff;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.listing-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-color: #Fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.listing-heading {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 16px;
+    max-height: 92px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.listing-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    max-width: 112px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Shared styles for the card footer */
+.card-footer {
+    display: flex;
+    max-height: 60px;
+    height: 100%;
+    border-top: 1px solid #E4E4E4;
+}
+
+/* Classes to handle rounded corners */
+.rounded-bottom-left {
+    border-bottom-left-radius: 25px;
+}
+
+.bordered-feature {
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 25px;
+}

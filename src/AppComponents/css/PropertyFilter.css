@@ -1,0 +1,106 @@
+
+.filter-button-a {
+    padding: 10px 15px;
+    max-width: 267.5px;
+    width: 100%;
+    min-height: 60px;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px;
+    text-align: center;
+    border-color: #F5F5F5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.filter-button-b {
+    padding: 10px 15px;
+    max-width: 267.5px;
+    width: 100%;
+    min-height: 60px;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px;
+    text-align: center;
+    border-color: #F5F5F5;
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+}
+
+.filter-button-c {
+    padding: 10px 15px;
+    max-width: 267.5px;
+    width: 100%;
+    min-height: 60px;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px;
+    text-align: center;
+    border-color: #F5F5F5;
+    border-right: 1px solid #E4E4E4;
+}
+
+.filter-button-d {
+    padding: 10px 15px;
+    max-width: 267.5px;
+    width: 100%;
+    min-height: 60px;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px;
+    text-align: center;
+    border-color: #F5F5F5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.filter-button-a:hover {
+    cursor: pointer;
+}
+
+.filter-button-b:hover {
+    cursor: pointer;
+}
+
+.filter-button-c:hover {
+    cursor: pointer;
+}
+
+.filter-button-d:hover {
+    cursor: pointer;
+}
+
+@media(max-width:710px) {
+    .filter-button-a {
+    max-width: 336px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    }
+
+    .filter-button-b {
+    max-width: 336px;
+    border-top: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    border-left: 0;
+    border-right: 0;
+    }
+
+    .filter-button-c {
+    max-width: 336px;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 0;
+    }
+
+    .filter-button-d {
+    max-width: 336px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+
+}
