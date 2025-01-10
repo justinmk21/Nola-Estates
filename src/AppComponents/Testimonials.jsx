@@ -3,7 +3,7 @@ import './css/Testimonials.css'
 import { AvatarIcon } from "@chakra-ui/react/avatar";
 import GradientSpan from './GradientSpan'
 import { Text } from '@chakra-ui/react';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { UserContext } from '../App';
 
 function Testimonials() {
@@ -12,10 +12,6 @@ function Testimonials() {
 
     const Lino = 'This apartment was perfect for our family vacation. The view was stunning!'
 
-    let testimonial = listings[1].testimonials[0].name
-
-    let test = listings[1].testimonials[0].message
-
     const Kgomotso = '“The best estate I have ever visited. Everything about the\
                     place screams Luxury”'
 
@@ -23,11 +19,7 @@ function Testimonials() {
                     leap forward and see it for yourself. Trust me, you wont \
                     regret it.”'
 
-    const [client, setCustomer] = useState(test);
-
-    useEffect(() => {
-        console.log('testimony:' , testimonial);
-    },[])
+    const [client, setCustomer] = useState(Lino);
 
     function CustomerCard(props) {
 
@@ -40,7 +32,7 @@ function Testimonials() {
                 <div
                     style={{ paddingLeft: '12px' }}
                     >
-                    <Text></Text>
+                    <Text>Kgomotso Mkhawane</Text>
                     <Text opacity={0.75}>Client</Text>
                 </div>
             </div>
@@ -68,7 +60,7 @@ function Testimonials() {
                     className='testimony-cards'
                     >
                     <CustomerCard
-                        onClick={() => setCustomer()}
+                        onClick={() => setCustomer(Lino)}
                         />
                     <CustomerCard
                         onClick={() => setCustomer(Justin)}
