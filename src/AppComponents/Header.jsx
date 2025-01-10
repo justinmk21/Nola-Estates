@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { LuMenu } from 'react-icons/lu';
 import './css/Header.css';
 import { useState } from 'react';
+//import { ColorModeButton } from '../components/ui/color-mode';
 
 function Header() {
     const [openMenu, setOpenMenu] = useState(false);
@@ -14,7 +15,7 @@ function Header() {
                 <img className='logo' src={logo} alt='logo' />
             </div>
             <nav className={openMenu ? "open" : ""}>
-                <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/Nola Estates'}>Home</NavLink>
                 <NavLink to={`/listing/${4}`}>
                     <span style={{ color: 'orange' }}>Hot</span> Listing
                 </NavLink>
