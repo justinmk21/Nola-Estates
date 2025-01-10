@@ -6,6 +6,8 @@ import { useEffect, useContext } from "react"
 import './css/Properties.css'
 import { UserContext } from "../App"
 import { useNavigate } from "react-router-dom"
+import { Flex, Spinner } from "@chakra-ui/react"
+
 
 function Properties() {
 
@@ -54,7 +56,21 @@ function Properties() {
                 <div
                     className="cards"
                     >
-                    {listings.slice(0,5).map((property) => (
+                    {listings.length === 0 ? (
+                        <Flex
+                            alignItems={'center'}
+                            >
+                            <Spinner
+                                thickness='4px'
+                                size="xl"
+                                color={'#FFAC12'}
+                                />
+                            <h2 style={{ marginLeft: '10px' }}>
+                                Loading Properties...
+                            </h2>
+                        </Flex>
+                    ) : (
+                    listings.slice(0,5).map((property) => (
                         <Card
                             key={property.id}
                             onClick={() => handleNavToPropertyPage(property.id)}
@@ -65,7 +81,7 @@ function Properties() {
                             img={property.images[1].image}
                             />
                     )
-                    )}
+                    ))}
                 </div>
                 <div
                     style={{ textAlign: 'center', marginBottom: '30px' }}

@@ -5,12 +5,14 @@ import './css/Properties.css'
 import { useNavigate } from "react-router-dom"
 import { useContext } from "react"
 import { UserContext } from "../App"
+import { Flex, Spinner } from "@chakra-ui/react"
 
 function PropertyPreview() {
 
     const listings = useContext(UserContext);
 
     const navToProperties = useNavigate();
+
     const navToProperty = useNavigate();
 
     const handleNavToProperty = (id) => {
@@ -18,7 +20,7 @@ function PropertyPreview() {
     }
 
     const handleNavigation = () => {
-        navToProperties('/listings');
+        navToProperties('/properties');
     }
 
     return (
@@ -34,7 +36,21 @@ function PropertyPreview() {
                 <div
                     className="cards"
                     >
-                    {listings.slice(0,3).map((property) => (
+                    {listings.length === 0 ? (
+                        <Flex
+                            alignItems={'center'}
+                            >
+                            <Spinner
+                                thickness='4px'
+                                size="xl"
+                                color={'#FFAC12'}
+                                />
+                            <h2 style={{ marginLeft: '10px' }}>
+                                Loading Properties...
+                            </h2>
+                        </Flex>
+                    ) : (
+                    listings.slice(0,3).map((property) => (
                         <Card
                             key={property.id}
                             onClick={() => handleNavToProperty(property.id)}
@@ -45,7 +61,7 @@ function PropertyPreview() {
                             img={property.images[1].image}
                             />
                         )
-                    )}
+                    ))}
                 </div>
                 <div
                     style={{ textAlign: 'center', marginBottom: '30px' }}
