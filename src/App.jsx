@@ -46,7 +46,7 @@ function App() {
     <UserContext.Provider value={listings}>
       <HeaderSection/>
       <Routes>
-        <Route path='/Nola-Estates/' element={
+        <Route path='/NolaEstates' element={
           <>
             <LandingPage/>
             <InfoPage/>
@@ -69,7 +69,7 @@ function App() {
           </>
         }/>
         <Route
-            path='/listings' element={
+            path='/properties' element={
               <>
               <Properties/>
               </>

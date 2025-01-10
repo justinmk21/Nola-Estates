@@ -15,11 +15,11 @@ function Header() {
                 <img className='logo' src={logo} alt='logo' />
             </div>
             <nav className={openMenu ? "open" : ""}>
-                <NavLink to={'/Nola Estates'}>Home</NavLink>
+                <NavLink to={'/NolaEstates'}>Home</NavLink>
                 <NavLink to={`/listing/${4}`}>
                     <span style={{ color: 'orange' }}>Hot</span> Listing
                 </NavLink>
-                <NavLink to={'/listings'}>View Properties</NavLink>
+                <NavLink to={'/properties'}>View Properties</NavLink>
                 <div
                     className='work'
                     >

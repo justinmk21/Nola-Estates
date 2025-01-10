@@ -40,7 +40,7 @@ function Testimonials() {
                 <div
                     style={{ paddingLeft: '12px' }}
                     >
-                    <Text>{testimonial}</Text>
+                    <Text></Text>
                     <Text opacity={0.75}>Client</Text>
                 </div>
             </div>
@@ -68,7 +68,7 @@ function Testimonials() {
                     className='testimony-cards'
                     >
                     <CustomerCard
-                        onClick={() => setCustomer(test)}
+                        onClick={() => setCustomer()}
                         />
                     <CustomerCard
                         onClick={() => setCustomer(Justin)}
